@@ -1,0 +1,25 @@
+---
+- name: Playbook that installs selected features on an IoT edge device
+  hosts: all
+  vars:
+    kiosk_enabled: false
+    gharunner_enabled: false
+
+  roles:
+    - role: ansible-kiosk
+      become: true
+      vars:
+        kiosk_url: "{{ kiosk_kiosk_url }}"
+      when: kiosk_enabled
+    - role: edi_installer
+      become: true
+      when: gharunner_enabled
+    - role: ansible-github_actions_runner
+      user: gitops
+      become: true
+      vars:
+        github_account: "{{ gharunner_github_account }}"
+        github_repo: "{{ gharunner_github_repo }}"
+        access_token: "{{ gharunner_access_token }}"
+        reinstall_runner: "{{ gharunner_reinstall_runner | default('yes') }}"
+      when: gharunner_enabled
