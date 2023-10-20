@@ -2,10 +2,19 @@
 - name: Playbook that installs selected features on an IoT edge device
   hosts: all
   vars:
+    monitoring_enabled: "false"
     kiosk_enabled: "false"
     gharunner_enabled: "false"
 
   roles:
+    - role: fluentbit_installer
+      become: true
+      vars:
+        influxdb_server: "{{ monitoring_influxdb_server }}"
+        influxdb_bucket: "{{ monitoring_influxdb_bucket }}"
+        influxdb_http_token: "{{ monitoring_influxdb_http_token }}"
+        influxdb_org: "{{ monitoring_influxdb_org }}"
+      when: monitoring_enabled | bool
     - role: ansible-kiosk
       become: true
       vars:
