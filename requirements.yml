@@ -1,7 +1,7 @@
 - src: https://github.com/lueschem/fluentbit_installer.git
-  version: 80b5eb183fec82bc3a16097170d5b09f16d2dc6d
+  version: 1.0.0
 - src: https://github.com/lueschem/ansible-kiosk.git
-  version: b213c938f3a84f12929fb0caeef1db8c7ee404e5
+  version: 1.0.0
 - src: https://github.com/MonolithProjects/ansible-github_actions_runner.git
   version: 1.17.0
 - src: https://github.com/lueschem/edi_installer.git
