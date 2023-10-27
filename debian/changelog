@@ -1,3 +1,10 @@
+edge-playbook (1.1.0) jammy; urgency=medium
+
+  [ Matthias Luescher ]
+  * Added automatic package build.
+
+ -- Matthias Lüscher (Launchpad) <m.luescher@datacomm.ch>  Fri, 27 Oct 2023 09:47:40 +0200
+
 edge-playbook (1.0.1) jammy; urgency=medium
 
   * Initial release.
