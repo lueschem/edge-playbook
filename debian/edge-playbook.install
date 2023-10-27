@@ -1,0 +1,4 @@
+playbook.yml /usr/share/edge-playbook/
+README.md /usr/share/edge-playbook/
+requirements.yml /usr/share/edge-playbook/
+roles /usr/share/edge-playbook/

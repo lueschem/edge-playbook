@@ -1,0 +1,5 @@
+edge-playbook (1.0.1) jammy; urgency=medium
+
+  * Initial release.
+
+ -- Matthias Luescher <lueschem@gmail.com>  Fri, 27 Oct 2023 08:48:39 +0200

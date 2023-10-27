@@ -1,0 +1,13 @@
+Source: edge-playbook
+Section: devel
+Priority: optional
+Build-Depends: debhelper (>= 13),
+               ansible-core | ansible
+Maintainer: Matthias Luescher <lueschem@gmail.com>
+Standards-Version: 3.9.8
+
+Package: edge-playbook
+Architecture: all
+Depends: ${misc:Depends},
+Description: Embedded Development Infrastructure Edge Playbook
+ Package containing an edge playbook that can be executed on an IoT gateway.

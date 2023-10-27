@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+#DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	rm -rf roles
+	mkdir roles
+	ansible-galaxy install --roles-path roles -r requirements.yml
+	find roles/ -name ".gitignore" -type f -delete
+	dh_auto_build
+

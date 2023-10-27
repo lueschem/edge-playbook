@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Create a new edge-playbook release that can be uploaded to a repository.
+#
+# usage: do_release 0.2.0
+
+set -e
+set -o errexit
+set -o pipefail
+
+if [ -z ${1} ]
+then
+    >&2 echo "Error: Usage: ${0} VERSION"
+    exit 1
+fi
+
+set -o nounset
+
+SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd ${SCRIPTDIR}
+
+if [ "$(git rev-parse --abbrev-ref HEAD)" != "develop" ]
+then
+    >&2 echo "Error: please switch to the develop branch before doing a release!"
+    exit 1
+fi
+
+if ! git diff --exit-code --quiet
+then
+    >&2 echo "Error: there are unstaged changes!"
+    exit 1
+fi
+
+if ! git diff --cached --exit-code --quiet
+then
+    >&2 echo "Error: there are uncommitted changes!"
+    exit 1
+fi
+
+git clean -dxf
+
+source /etc/os-release
+
+NEW_VERSION="${1}"
+
+gbp dch --new-version ${NEW_VERSION} --release --distribution ${VERSION_CODENAME} --debian-branch develop --debian-tag v%\(version\)s
+
+git add debian/changelog
+git commit -m "New version ${NEW_VERSION}."
+
+git flow release start ${NEW_VERSION}
+git flow release finish
+
+git push origin main
+git push origin develop
+git push --tags
+
