@@ -42,4 +42,4 @@ Required parameters for repository runner:
 Optional parameters:
 
 - gharunner_reinstall_runner: yes (default yes, tells if the runner shall be re-installed during an OS update)
-- gharunner_runner_labels: [foo, bar] (default [], additional labels that shall be applied to the runner)
+- gharunner_runner_labels: foo,bar (default "", comma separated list of additional labels that shall be applied to the runner)
