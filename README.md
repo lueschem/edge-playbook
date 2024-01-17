@@ -39,6 +39,7 @@ Required parameters for repository runner:
 - gharunner_github_repo: GH_REPO
 - gharunner_access_token: GH_SECRET_TOKEN
 
-Optional parameter if the runner shall be re-installed during an OS update:
+Optional parameters:
 
-- gharunner_reinstall_runner: yes (default yes)
+- gharunner_reinstall_runner: yes (default yes, tells if the runner shall be re-installed during an OS update)
+- gharunner_runner_labels: [foo, bar] (default [], additional labels that shall be applied to the runner)

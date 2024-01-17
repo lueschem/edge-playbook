@@ -31,4 +31,5 @@
         github_repo: "{{ gharunner_github_repo }}"
         access_token: "{{ gharunner_access_token }}"
         reinstall_runner: "{{ gharunner_reinstall_runner | default('yes') }}"
+        runner_labels: "{{ gharunner_runner_labels | default([]) }}"
       when: gharunner_enabled | bool

@@ -1,3 +1,9 @@
+edge-playbook (1.2.0) jammy; urgency=medium
+
+  * Added possibility to assign labels to runners, updated runner role.
+
+ -- Matthias Luescher <lueschem@gmail.com>  Wed, 17 Jan 2024 09:01:28 +0100
+
 edge-playbook (1.1.0) jammy; urgency=medium
 
   [ Matthias Luescher ]
