@@ -1,3 +1,10 @@
+edge-playbook (1.4.4) mantic; urgency=medium
+
+  [ Matthias Luescher ]
+  * Upgraded edi_installer role.
+
+ -- Matthias Lüscher (Launchpad) <m.luescher@datacomm.ch>  Fri, 19 Apr 2024 22:31:45 +0200
+
 edge-playbook (1.4.3) mantic; urgency=medium
 
   [ Matthias Luescher ]
