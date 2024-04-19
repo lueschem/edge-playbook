@@ -1,3 +1,10 @@
+edge-playbook (1.4.5) mantic; urgency=medium
+
+  [ Matthias Luescher ]
+  * Make sure mmdebstrap gets installed.
+
+ -- Matthias Lüscher (Launchpad) <m.luescher@datacomm.ch>  Fri, 19 Apr 2024 23:13:37 +0200
+
 edge-playbook (1.4.4) mantic; urgency=medium
 
   [ Matthias Luescher ]
