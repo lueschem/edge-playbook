@@ -31,6 +31,7 @@ git config --system user.email "lueschem@gmail.com"
 git config --system user.name "Matthias Luescher"
 git config --global --add safe.directory "$(pwd)"
 git config --global --add safe.directory "${TESTUSERHOME}/${PACKAGE_NAME}"
+sudo -H -u ${TESTUSER} git config --global --add safe.directory /data/runner/.git
 
 if [[ $EUID -ne 0 ]]
 then
