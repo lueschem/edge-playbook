@@ -1,3 +1,10 @@
+edge-playbook (1.4.9) noble; urgency=medium
+
+  [ Matthias Luescher ]
+  * Fixed build.
+
+ -- Matthias Lüscher (Launchpad) <m.luescher@datacomm.ch>  Sat, 19 Oct 2024 00:15:14 +0200
+
 edge-playbook (1.4.8) noble; urgency=medium
 
   [ Matthias Luescher ]
