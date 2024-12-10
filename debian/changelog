@@ -1,3 +1,10 @@
+edge-playbook (1.5.0) jammy; urgency=medium
+
+  * Upgraded edi_installer role.
+  * Also build package for Debian trixie.
+
+ -- Matthias Lüscher (Launchpad) <m.luescher@datacomm.ch>  Tue, 10 Dec 2024 14:50:55 +0100
+
 edge-playbook (1.4.9) noble; urgency=medium
 
   [ Matthias Luescher ]

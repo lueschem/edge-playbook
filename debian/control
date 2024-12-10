@@ -2,7 +2,8 @@ Source: edge-playbook
 Section: devel
 Priority: optional
 Build-Depends: debhelper (>= 13),
-               ansible-core | ansible
+               ansible-core | ansible,
+               fakeroot,
 Maintainer: Matthias Luescher <lueschem@gmail.com>
 Standards-Version: 3.9.8
 
