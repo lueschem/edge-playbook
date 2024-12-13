@@ -1,3 +1,10 @@
+edge-playbook (1.6.0) noble; urgency=medium
+
+  [ Matthias Luescher ]
+  * Added Debian Trixie support for GitHub Action Runner.
+
+ -- Matthias Lüscher (Launchpad) <m.luescher@datacomm.ch>  Fri, 13 Dec 2024 13:39:33 +0100
+
 edge-playbook (1.5.0) jammy; urgency=medium
 
   * Upgraded edi_installer role.
