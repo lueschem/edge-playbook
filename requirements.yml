@@ -3,6 +3,6 @@
 - src: https://github.com/lueschem/ansible-kiosk.git
   version: 1.0.0
 - src: https://github.com/lueschem/ansible-github_actions_runner.git
-  version: master
+  version: 362e5b364fce82a7bfab59c018b0fda2a5e308e8
 - src: https://github.com/lueschem/edi_installer.git
   version: 1.1.9
