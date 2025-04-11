@@ -1,3 +1,9 @@
+edge-playbook (1.6.2) noble; urgency=medium
+
+  * Updated ansible-github_actions_runner role.
+
+ -- Matthias Luescher <lueschem@gmail.com>  Fri, 11 Apr 2025 10:10:44 +0200
+
 edge-playbook (1.6.1) noble; urgency=medium
 
   [ Matthias Luescher ]
